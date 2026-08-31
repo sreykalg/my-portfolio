@@ -93,7 +93,7 @@ export const hero = {
     },
     {
       label: 'Track record',
-      text: '2+ years with 12 shipped projects across mobile, web, and campus systems.',
+      text: '2+ years experience with 5 shipped projects across mobile, web, and campus systems.',
     },
     {
       label: 'Open to',
