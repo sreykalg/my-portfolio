@@ -392,6 +392,15 @@ h3 {
   gap: 0.55rem;
 }
 
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #16a34a;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.18);
+}
+
 .exp-meta {
   margin: 0.3rem 0 0 !important;
   color: var(--muted) !important;

@@ -31,8 +31,8 @@ export type ProjectStatusTone = 'live' | 'mvp' | 'muted'
 
 export type Project = {
   title: string
-  status: string
-  statusTone: ProjectStatusTone
+  status?: string
+  statusTone?: ProjectStatusTone
   summary: string
   year: string
   role: string
@@ -78,7 +78,7 @@ export const nav: NavItem[] = [
 ]
 
 export const hero = {
-  eyebrow: 'QA Engineer | 2 years Experience',
+  eyebrow: 'Mobile & Web Developer | 2 years Experience',
   intro:
     'I build modern mobile and web applications with clean UI, secure backend architecture, and real-world business value. From self-ordering café apps to rental billing with ABA PayWay, I ship interfaces that feel intentional and backends that hold up under real use.',
   highlight: 'interfaces that feel intentional',
@@ -89,7 +89,7 @@ export const hero = {
   meta: [
     {
       label: 'Focus',
-      text: 'Manual & automation testing, API testing, web and mobile QA with Postman, Playwright, Selenium, and Appium.',
+      text: 'Flutter, Laravel, API integration, and payment workflows (ABA PayWay & Bakong).',
     },
     {
       label: 'Track record',
@@ -97,7 +97,7 @@ export const hero = {
     },
     {
       label: 'Open to',
-      text: 'QA Engineer roles, remote/hybrid or teams shipping quality products.',
+      text: 'Mobile/web roles, freelance, remote or hybrid, teams shipping real products.',
     },
   ] satisfies MetaItem[],
 }
@@ -160,8 +160,6 @@ export const experience = {
 export const projects: Project[] = [
   {
     title: 'Room Renting Platform',
-    status: 'Live',
-    statusTone: 'live',
     summary:
       'Rental listing, monthly billing, PDF invoices, and ABA PayWay checkout for Sihanouk Ville, guest, tenant, and owner dashboards.',
     year: '2025',
@@ -170,8 +168,6 @@ export const projects: Project[] = [
   },
   {
     title: 'Café App LU Café',
-    status: 'Live',
-    statusTone: 'live',
     summary:
       'Self-ordering coffee platform for students and professors, queue efficiency and independent pickup.',
     year: '2024',
@@ -180,8 +176,6 @@ export const projects: Project[] = [
   },
   {
     title: 'Attendee',
-    status: 'Thesis',
-    statusTone: 'mvp',
     summary:
       'University attendance via QR scan, Flutter + Riverpod thesis for Life University.',
     year: '2025',
@@ -190,8 +184,6 @@ export const projects: Project[] = [
   },
   {
     title: 'Digital Bill',
-    status: 'Live',
-    statusTone: 'live',
     summary:
       "Billing and PDF invoice generator built for my mother's small business on Laravel + MySQL.",
     year: '2024',
@@ -210,7 +202,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Life Football Club Website',
-    status: 'Live',
+    status: 'Org',
     statusTone: 'muted',
     summary:
       'Official club presence site for Life Football Club in Sihanouk Ville.',
@@ -230,8 +222,6 @@ export const projects: Project[] = [
   },
   {
     title: 'FocusTimer',
-    status: 'Live',
-    statusTone: 'live',
     summary:
       'Pomodoro-style focus app with custom focus and break durations, Flutter + GetX.',
     year: '2024',

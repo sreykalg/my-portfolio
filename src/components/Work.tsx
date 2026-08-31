@@ -35,9 +35,11 @@ export default function Work() {
                 <div className="work-main">
                   <div className="work-title-row">
                     <h3>{project.title}</h3>
-                    <span className={`badge badge-${project.statusTone}`}>
-                      {project.status}
-                    </span>
+                    {project.status ? (
+                      <span className={`badge badge-${project.statusTone ?? 'muted'}`}>
+                        {project.status}
+                      </span>
+                    ) : null}
                   </div>
                   <p>{project.summary}</p>
                 </div>

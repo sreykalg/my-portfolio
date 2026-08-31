@@ -11,7 +11,7 @@ export default function Footer() {
             {site.name} <span className="muted-name">/ {site.surname}</span>
           </p>
           <p className="footer-blurb">
-            QA Engineer in {site.location}.
+            Mobile &amp; Web Developer in {site.location}.
           </p>
         </div>
         <div className="footer-right">

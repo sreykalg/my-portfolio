@@ -14,7 +14,11 @@ export default function Experience() {
               <div className="exp-head">
                 <h3>{item.title}</h3>
                 {item.current ? (
-                  <span className="badge badge-live">Current</span>
+                  <span
+                    className="status-dot"
+                    title="Current"
+                    aria-label="Current role"
+                  />
                 ) : null}
               </div>
               <p className="exp-meta">
