@@ -166,6 +166,16 @@ export const experience = {
 
 export const projects: Project[] = [
   {
+    title: 'Commune Cafe',
+    status: 'Business',
+    statusTone: 'muted',
+    summary:
+      'Landing page and Android POS for Commune Cafe (We commune, over coffee) in Zamboanga City, with receipt and label printing for daily café operations.',
+    year: '2026',
+    role: 'Next.js | Android POS',
+    href: 'https://commune-cafe.com',
+  },
+  {
     title: 'Room Renting Platform',
     summary:
       'Rental listing, monthly billing, PDF invoices, and ABA PayWay checkout for Sihanouk Ville, guest, tenant, and owner dashboards.',

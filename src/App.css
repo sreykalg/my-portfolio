@@ -476,6 +476,16 @@ a.work-row:hover {
   color: color-mix(in oklab, var(--fg) 75%, transparent);
 }
 
+.work-link {
+  display: inline-block;
+  margin-top: 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .work-meta {
   font-size: 0.7rem;
   color: var(--muted);

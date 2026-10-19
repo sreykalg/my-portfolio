@@ -3,6 +3,14 @@ import { projects } from '../data/content'
 
 const INITIAL = 4
 
+function linkLabel(href: string) {
+  try {
+    return new URL(href).hostname.replace(/^www\./, '')
+  } catch {
+    return href
+  }
+}
+
 export default function Work() {
   const [showAll, setShowAll] = useState(false)
   const visible = showAll ? projects : projects.slice(0, INITIAL)
@@ -36,12 +44,17 @@ export default function Work() {
                   <div className="work-title-row">
                     <h3>{project.title}</h3>
                     {project.status ? (
-                      <span className={`badge badge-${project.statusTone ?? 'muted'}`}>
+                      <span
+                        className={`badge badge-${project.statusTone ?? 'muted'}`}
+                      >
                         {project.status}
                       </span>
                     ) : null}
                   </div>
                   <p>{project.summary}</p>
+                  {project.href ? (
+                    <span className="work-link">{linkLabel(project.href)}</span>
+                  ) : null}
                 </div>
                 <div className="work-meta">
                   {project.year} | {project.role}
