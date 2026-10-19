@@ -130,6 +130,13 @@ export const experience = {
   title: 'Building systems for campus and local business.',
   items: [
     {
+      title: 'Software Developer',
+      org: 'Synorra | Start-up Company',
+      period: '2026 – Present',
+      current: true,
+      text: 'Building software for coffee shops, clothing shops, and university websites, including AI chatbot features and other tools businesses need day to day.',
+    },
+    {
       title: 'Assistant, Computer Science Department',
       org: 'Life University | Sihanouk Ville',
       period: 'Nov 2025 – Present',
@@ -240,7 +247,7 @@ export const skills = {
     },
     {
       title: 'Frameworks & UI',
-      items: ['Flutter', 'Laravel', 'Blade'],
+      items: ['Flutter', 'Laravel', 'Next.js', 'Blade'],
     },
     {
       title: 'State & data',
